@@ -40,7 +40,7 @@ Python, Google Colab
     - `also_view`：僅 24.69% 商品有 `also_view`資料
     - `also_buy`：僅 20.32% 商品有 `also_buy` 資料
 
-- 由於 `description` 欄位資料過大，故最終未將其納入特徵
+
 
 
 ## 推薦規則
