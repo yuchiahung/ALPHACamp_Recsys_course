@@ -48,7 +48,8 @@ Python, Google Colab
 ### 方法4：Surprise: Item-based CF + multiple combinations of similarities_module & KNN algorithm
 使用 Surprise 套件，針對四種 similarities module 和四種 KNN algorithm 交叉實驗何者會有比較好的分數（共16種組合)，八種 similarities module & KNN algorithm分別如下:  
 - Similarities_module: `cosine`, `msd`, `pearson`, `pearson_baseline`
-- KNN algorithm: `KNNBasic`, `KNNWithMeans`, `KNNWithZScore`, `KNNBaseline`   
+- KNN algorithm: `KNNBasic`, `KNNWithMeans`, `KNNWithZScore`, `KNNBaseline`    
+結果顯示此 16 種組合效果相似，分數並無差異。   
 (訓練資料區間: 2017-09-01~2018-08-31)
 
 ### 方法5：結合方法 3-2 和 week1 的 rule-based 算法
