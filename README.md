@@ -28,7 +28,7 @@ Python, Google Colab
 ## 推薦方法
 
 ### 方法1-1 依照範例程式手刻 user-based CF + cosine similarity：  
-排除評論紀錄 < 3 次的使用者評論資料後，計算各個 user 之間購買物品的 cosine_similarity，最終推薦出 k 個商品（排除已買過的商品）
+排除評論紀錄 < 3 次的使用者評論資料後，計算各個 user 之間購買物品的 cosine_similarity，最終推薦出 k 個商品（排除已買過的商品） /n/n
 
 ### 方法1-2 針對範例程式的 cosine_similarity 做部分更動  
 由於計算 user-based CF 時發現大多使用者和其他使用者算出來的 cosine similarity 都是 = 1，探索之後發現是因為大多使用者(e.g. user A)和使用者(e.g. user B)之間僅有購買過一個相同的商品，因此在計算 cosine similarity 過程先將只有評價過一個共同商品的使用者排除。而針對只評價過一個共同商品的使用者，以 `overall` 評分數字的絕對差異來做相似度的比較，例如兩個使用者(A, B)如果都對同一個商品評價 5 分會比一個使用者評 5 一個使用者評 4 (A:5, B:4) 來得接近。
@@ -51,12 +51,12 @@ Python, Google Colab
 (訓練資料區間: 2017-09-01~2018-08-31)
 
 ### 方法5：結合方法 3-2 和 week1 的 rule-based 算法
-week1 rule-based 算法：依據過去一個月的評論數量和平均評論分數排序，推薦排名前 k 個的熱銷品
+week1 rule-based 算法：依據過去一個月的評論數量和平均評論分數排序，推薦排名前 k 個的熱銷品 /n/n
 
 
 ## 最終推薦分數  
 
-成功推薦給使用者 k 個商品，最終以**方法3-2: 使用 Suprise item-based + Cosine Similarity + KNNBasic 並限制 min_support = 2**得到最高的分數：0.003390
+成功推薦給使用者 k 個商品，最終以<span style="color:orange">**方法3-2: 使用 Suprise item-based + Cosine Similarity + KNNBasic 並限制 min_support = 2**</span>得到最高的分數：0.003390    
 另外，若結合 week1 的 rule-based 推薦方式，能得到比 week1 (0.1576) 高的分數 (0.1593)，顯示由於此資料集的使用者購買次數不夠多，又無其他紀錄可參考（如瀏覽紀錄等），所以如果只使用協同過濾來做推薦的話，能夠預測出的購買行為很有限，在搭配推薦 rule-based 產生的熱銷品後會有較好的結果。 
 
 四個方法的分數分別如下表：  
@@ -68,4 +68,4 @@ week1 rule-based 算法：依據過去一個月的評論數量和平均評論分
 方法 3-1: sample Surprise item-based + cosine + KNN | 0.001695
 方法 3-2: Surprise item-based (min_support = 2)| 0.003390
 方法 4: Surprise item-based (others similarities module & algorithm) | 0.003390
-**方法 5: Surprise item-based + rule-based** | **0.159322**
+<span style="color:orange">方法 5: Surprise item-based + rule-based</span> | <span style="color:orange">0.159322</span>
