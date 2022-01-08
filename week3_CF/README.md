@@ -1,6 +1,6 @@
 # data-course-sample
 
-# Week3
+# Week3 - Collaborative Filtering
 
 ## 專案目的
 
