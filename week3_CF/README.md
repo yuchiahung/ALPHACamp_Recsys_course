@@ -1,4 +1,3 @@
-# data-course-sample
 
 # Week3 - Collaborative Filtering
 
