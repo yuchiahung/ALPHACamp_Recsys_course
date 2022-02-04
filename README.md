@@ -2,6 +2,12 @@
 
 > 專注思維與應用，成功建立「打造推薦系統」的專案經驗與作品，並理解工具使用背後的選擇，與數學推導/理論，讓理論與實作縮到最短的距離。
 
+![Week1](week1): Rule-based Filtering 
+![Week2](week2): Content-based Filtering 
+![Week3_CF](week3_CF): Collaborative Filtering
+![Week3_MF](week3_MF): Matrix Factorization
+
+
 ## 課程目標
 - 目標：能獨立打造推薦系統
     - 描述 「經典解法」（rule-based/item-based/collaborative-filtering）這三種推薦方式的 high-level 運作原理
