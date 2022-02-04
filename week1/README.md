@@ -1,4 +1,3 @@
-# data-course-sample
 
 # Week1
 ## 專案目的
