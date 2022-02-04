@@ -1,5 +1,3 @@
-# data-course-sample
-
 # Week3 - Matrix Factorization 
 
 ## 專案目的
